@@ -30,6 +30,7 @@
 }
 
 - (void)loadDataModelSuccess:(void(^)(DataModel *model))success faile:(void(^)(NSError *error))faile{
+    // 网易新闻链接
     NSString *url = @"http://c.m.163.com/nc/article/CDAG0B3D000189FH/full.html";
     
     [[self manager]GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
